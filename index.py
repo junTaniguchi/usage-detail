@@ -5,12 +5,12 @@ Created on Thu Jan 16 14:45:40 2020
 @author: tie305403
 """
 
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello World"
+    return render_template('index.html')
 
 @app.route('/api/login/?')
 def login():
