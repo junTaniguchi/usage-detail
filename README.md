@@ -6,7 +6,7 @@ Single Page Applicationで構築したクレジットカードの会員情報を
   
 ## 環境設定
 当リポジトリはPython3.7.4の環境で動いているため、以下のURLからanacondaをダウンロードし、インストールしてください。  
-[anaconda3のダウンロード](https://www.anaconda.com/distribution/)  
+[anaconda3のダウンロード](https://repo.anaconda.com/archive/Anaconda3-2019.10-Windows-x86_64.exe)  
   
 ## アプリ稼働方法
 コマンドプロンプトにて当リポジトリまでcdで移動し、以下のコマンドを実行してください。  
