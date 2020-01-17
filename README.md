@@ -18,11 +18,11 @@ Gitのコマンドを覚えるのが面倒である場合は以下のアプリ�
 [TortoiseGitのダウンロード](https://github.com/git-for-windows/git/releases/download/v2.25.0.windows.1/Git-2.25.0-64-bit.exe)  
 
 ### Gitのリモートリポジトリの初期取得
-リポジトリをGit Cloneコマンドで取得して下さい。  
+リモートリポジトリをGit Cloneコマンドで取得して下さい。  
 `git clone https://github.com/junTaniguchi/usage-detail.git`  
 
 ### Gitの同期  
-リポジトリ上の最新の資材をローカルへ持ってくる際は以下のコマンドかコンテキストメニューのTortoiseGitから「Git同期」-> 「プル」から取得してください。  
+リモートリポジトリ上の最新の資材をローカルへ持ってくる際は以下のコマンドかコンテキストメニューのTortoiseGitから「Git同期」-> 「プル」から取得してください。  
 `git pull origin master`  
 
 ### Gitの更新  
