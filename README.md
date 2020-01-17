@@ -1,4 +1,4 @@
-# usage-detail
+# デブサミ用シングルページアプリケーション
 ## 概要  
 Single Page Applicationで構築したクレジットカードの会員情報を取得するためのアプリ。  
 当リポジトリはFlaskのBackend for Frontendになります。  
