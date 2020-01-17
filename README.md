@@ -17,17 +17,9 @@ Githubから当リポジトリを利用する際にはローカル環境にGit�
 Gitのコマンドを覚えるのが面倒である場合は以下のアプリをインストールして利用してください。SVNと同じ間隔で利用できます。  
 [TortoiseGitのダウンロード](https://github.com/git-for-windows/git/releases/download/v2.25.0.windows.1/Git-2.25.0-64-bit.exe)  
 
-### リポジトリの取得
+### Gitのリモートリポジトリの初期取得
 リポジトリをGit Cloneコマンドで取得して下さい。  
 `git clone https://github.com/junTaniguchi/usage-detail.git`  
-
-## アプリ稼働方法
-コマンドプロンプトにて当リポジトリまでcdで移動し、以下のコマンドを実行してください。  
-`python index.py`  
-  
-## メインページのURL  
-上記コマンドでアプリが稼働したあとは以下のURLでメインのページを確認することができます。  
-http://localhost:5000/
 
 ### Gitの同期  
 リポジトリ上の最新の資材をローカルへ持ってくる際は以下のコマンドかコンテキストメニューのTortoiseGitから「Git同期」-> 「プル」から取得してください。
@@ -37,3 +29,12 @@ http://localhost:5000/
 更新した場合は以下のコマンドかコンテキストメニューのTortoiseGitから「Gitコミット -> master」からコミットしてください。  
 `git add .`  
 `git commit origin master`  
+
+## アプリ稼働方法
+コマンドプロンプトにて当リポジトリまでcdで移動し、以下のコマンドを実行してください。  
+`python index.py`  
+  
+## メインページのURL  
+上記コマンドでアプリが稼働したあとは以下のURLでメインのページを確認することができます。  
+http://localhost:5000/
+
