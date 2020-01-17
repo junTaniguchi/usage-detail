@@ -22,7 +22,7 @@ Gitのコマンドを覚えるのが面倒である場合は以下のアプリ�
 `git clone https://github.com/junTaniguchi/usage-detail.git`  
 
 ### Gitの同期  
-リポジトリ上の最新の資材をローカルへ持ってくる際は以下のコマンドかコンテキストメニューのTortoiseGitから「Git同期」-> 「プル」から取得してください。
+リポジトリ上の最新の資材をローカルへ持ってくる際は以下のコマンドかコンテキストメニューのTortoiseGitから「Git同期」-> 「プル」から取得してください。  
 `git pull origin master`  
 
 ### Gitの更新  
