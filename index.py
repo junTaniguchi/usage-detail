@@ -10,6 +10,11 @@ from flask import Flask, render_template, request, abort, jsonify
 app = Flask(__name__)
 #api = Blueprint('api', __name__, url_prefix='/api')
 
+#APIサーバ名称
+URL_ITEMS = 'http://localhost:5001'
+#セッションID
+session_id = ''
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -47,9 +52,19 @@ def post_login():
     #if not mem_id or not password:
     #    abort(404, {'auth_result': '1', 'session_id': null})
 
-    auth_result = 0
+    #payload作成
+    item_data = {
+        'mem_id'   : mem_id,
+        'password' : password
+    }
+    #API Call
+    #req_post = requests.post(URL_ITEMS, headers=headers, json=item_data)
+    #セッションIDをサーバ側で保持
+    #session_id = req_post.json()['session_id']
+    #auth_result = req_post.json()['auth_result']
     session_id = '0faa025f'
-    return jsonify({'auth_result': auth_result, 'session_id': session_id})
+    auth_result = 0
+    return jsonify({'auth_result': auth_result, 'session_id': SESSION_ID})
 
 @app.route('/api/get/user/<string:session_id>', methods=['GET'])
 def get_customer(session_id=None):
@@ -75,6 +90,11 @@ def get_customer(session_id=None):
 
     #if not session_id:
     #    abort(404, {'auth_result': '1', 'customer_info': null})
+
+    #API Call
+    #r_get = requests.get(URL_ITEMS + '/api/get/user/' + session_id, headers=headers)
+    #auth_result = req_post.json()['auth_result']
+    #customer_info = req_post.json()['customer_info']
 
     auth_result = 0
     customer_info = {}
@@ -109,6 +129,12 @@ def get_balance(session_id=None):
 
     #if not session_id:
     #    abort(404, {'auth_result': '1', 'ask_result': 2, 'balance_info': null})
+
+    #API Call
+    #r_get = requests.get(URL_ITEMS + '/api/get/balance/' + session_id, headers=headers)
+    #auth_result = req_post.json()['auth_result']
+    #ask_result = req_post.json()['ask_result']
+    #balance_info = req_post.json()['balance_info']
 
     auth_result = 0
     ask_result = 0
@@ -146,6 +172,12 @@ def get_details(session_id=None):
 
     #if not session_id:
     #    abort(404, {'auth_result': '1', 'ask_result': 2, 'balance_info': null})
+
+    #API Call
+    #r_get = requests.get(URL_ITEMS + '/api/get/details/' + session_id, headers=headers)
+    #auth_result = req_post.json()['auth_result']
+    #ask_result = req_post.json()['ask_result']
+    #detail_info = req_post.json()['detail_info']
 
     auth_result = 0
     ask_result = 0
